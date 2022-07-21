@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>静态成员</title>
+</head>
+
+<body>
+    <script>
+        // function Phone() {
+
+        // }
+        // Phone.name = 'shouji'
+        // Phone.change = function () {
+        //     console.log(1);
+        // }
+        // Phone.prototype.size = 5
+        // let vivo = new Phone()
+        // console.log(Phone.name);
+        // // vivo.change()
+        // console.log(vivo.size);
+
+        // 静态属性属于类，而不属于实例对象
+        class Phone {
+            // 静态属性
+            static name = 'shouji'
+            static change = function () {
+                console.log(1);
+            }
+        }
+        let oppo = new Phone();
+        console.log(oppo.name);
+        Phone.change()
+        console.log(Phone.name);
+    </script>
+</body>
+
+</html>
